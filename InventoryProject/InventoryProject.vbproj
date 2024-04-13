@@ -1,0 +1,520 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CACCB582-2BB0-4841-A2AD-5592014EF40F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>InventoryProject.My.MyApplication</StartupObject>
+    <RootNamespace>InventoryProject</RootNamespace>
+    <AssemblyName>InventoryProject</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>InventoryProject.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>InventoryProject.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.Designer.vb">
+      <DependentUpon>About.vb</DependentUpon>
+    </Compile>
+    <Compile Include="About.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClevelandCableDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClevelandCableDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ClevelandMaterialDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClevelandMaterialDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CloseProgram.Designer.vb">
+      <DependentUpon>CloseProgram.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CloseProgram.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CostEstimatorPartNumbersDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CostEstimatorPartNumbersDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CreateID.Designer.vb">
+      <DependentUpon>CreateID.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreateID.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateIDDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CreateIDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CreateLastTransactionID.Designer.vb">
+      <DependentUpon>CreateLastTransactionID.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreateLastTransactionID.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreatePartID.Designer.vb">
+      <DependentUpon>CreatePartID.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreatePartID.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ElmiraCableDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ElmiraCableDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ElmiraMaterialDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ElmiraMaterialDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeDataTier.vb" />
+    <Compile Include="EmployeesDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeesDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputDataValidation.vb" />
+    <Compile Include="InventoryProjectDataTier.vb" />
+    <Compile Include="JamestownCableDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JamestownCableDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="JamestownMaterialDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JamestownMaterialDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KeyWordSearchClass.vb" />
+    <Compile Include="LastTransaction.Designer.vb">
+      <DependentUpon>LastTransaction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LastTransaction.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LastTransactionDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LastTransactionDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LastTransactionDataTier.vb" />
+    <Compile Include="LastTransactionIDDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LastTransactionIDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Logon.Designer.vb">
+      <DependentUpon>Logon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Logon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MilwaukeeCableDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MilwaukeeCableDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MilwaukeMaterialDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MilwaukeMaterialDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="OfficeValuationDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OfficeValuationDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PartNumberDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PartNumberDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PartNumberDataTier.vb" />
+    <Compile Include="PartNumberIDDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PartNumberIDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PartNumberIDDataTier.vb" />
+    <Compile Include="ProcessValuation.Designer.vb">
+      <DependentUpon>ProcessValuation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessValuation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen1.Designer.vb">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SyracuseCableDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SyracuseCableDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SyracuseMaterialDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SyracuseMaterialDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UpdatePartNumbers.Designer.vb">
+      <DependentUpon>UpdatePartNumbers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpdatePartNumbers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CloseProgram.resx">
+      <DependentUpon>CloseProgram.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateID.resx">
+      <DependentUpon>CreateID.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateLastTransactionID.resx">
+      <DependentUpon>CreateLastTransactionID.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreatePartID.resx">
+      <DependentUpon>CreatePartID.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LastTransaction.resx">
+      <DependentUpon>LastTransaction.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logon.resx">
+      <DependentUpon>Logon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProcessValuation.resx">
+      <DependentUpon>ProcessValuation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdatePartNumbers.resx">
+      <DependentUpon>UpdatePartNumbers.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClevelandCableDataSet.xsc">
+      <DependentUpon>ClevelandCableDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ClevelandCableDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ClevelandCableDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ClevelandCableDataSet.xss">
+      <DependentUpon>ClevelandCableDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ClevelandMaterialDataSet.xsc">
+      <DependentUpon>ClevelandMaterialDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ClevelandMaterialDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ClevelandMaterialDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ClevelandMaterialDataSet.xss">
+      <DependentUpon>ClevelandMaterialDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CostEstimatorPartNumbersDataSet.xsc">
+      <DependentUpon>CostEstimatorPartNumbersDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CostEstimatorPartNumbersDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CostEstimatorPartNumbersDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CostEstimatorPartNumbersDataSet.xss">
+      <DependentUpon>CostEstimatorPartNumbersDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CreateIDDataSet.xsc">
+      <DependentUpon>CreateIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CreateIDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CreateIDDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CreateIDDataSet.xss">
+      <DependentUpon>CreateIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ElmiraCableDataSet.xsc">
+      <DependentUpon>ElmiraCableDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ElmiraCableDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ElmiraCableDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ElmiraCableDataSet.xss">
+      <DependentUpon>ElmiraCableDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ElmiraMaterialDataSet.xsc">
+      <DependentUpon>ElmiraMaterialDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ElmiraMaterialDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ElmiraMaterialDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ElmiraMaterialDataSet.xss">
+      <DependentUpon>ElmiraMaterialDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeesDataSet.xsc">
+      <DependentUpon>EmployeesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeesDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeesDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmployeesDataSet.xss">
+      <DependentUpon>EmployeesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="JamestownCableDataSet.xsc">
+      <DependentUpon>JamestownCableDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="JamestownCableDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>JamestownCableDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="JamestownCableDataSet.xss">
+      <DependentUpon>JamestownCableDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="JamestownMaterialDataSet.xsc">
+      <DependentUpon>JamestownMaterialDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="JamestownMaterialDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>JamestownMaterialDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="JamestownMaterialDataSet.xss">
+      <DependentUpon>JamestownMaterialDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LastTransactionDataSet.xsc">
+      <DependentUpon>LastTransactionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LastTransactionDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LastTransactionDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LastTransactionDataSet.xss">
+      <DependentUpon>LastTransactionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LastTransactionIDDataSet.xsc">
+      <DependentUpon>LastTransactionIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LastTransactionIDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LastTransactionIDDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LastTransactionIDDataSet.xss">
+      <DependentUpon>LastTransactionIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MilwaukeeCableDataSet.xsc">
+      <DependentUpon>MilwaukeeCableDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MilwaukeeCableDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MilwaukeeCableDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MilwaukeeCableDataSet.xss">
+      <DependentUpon>MilwaukeeCableDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MilwaukeMaterialDataSet.xsc">
+      <DependentUpon>MilwaukeMaterialDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MilwaukeMaterialDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MilwaukeMaterialDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MilwaukeMaterialDataSet.xss">
+      <DependentUpon>MilwaukeMaterialDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="OfficeValuationDataSet.xsc">
+      <DependentUpon>OfficeValuationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OfficeValuationDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OfficeValuationDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OfficeValuationDataSet.xss">
+      <DependentUpon>OfficeValuationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PartNumberDataSet.xsc">
+      <DependentUpon>PartNumberDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PartNumberDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PartNumberDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PartNumberDataSet.xss">
+      <DependentUpon>PartNumberDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PartNumberIDDataSet.xsc">
+      <DependentUpon>PartNumberIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PartNumberIDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PartNumberIDDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PartNumberIDDataSet.xss">
+      <DependentUpon>PartNumberIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SyracuseCableDataSet.xsc">
+      <DependentUpon>SyracuseCableDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SyracuseCableDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SyracuseCableDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SyracuseCableDataSet.xss">
+      <DependentUpon>SyracuseCableDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SyracuseMaterialDataSet.xsc">
+      <DependentUpon>SyracuseMaterialDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SyracuseMaterialDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SyracuseMaterialDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SyracuseMaterialDataSet.xss">
+      <DependentUpon>SyracuseMaterialDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="inventoryvaluation.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tools.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
